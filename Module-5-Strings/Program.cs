@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text;
 
-namespace Module_5_Strings
+namespace Module5
 {
     class Program
     {
@@ -24,7 +24,7 @@ namespace Module_5_Strings
             // ShowUppercaseLatters();
 
             // Task F
-            //ShowEvenSymbols();
+            ShowEvenSymbols();
         }
 
         private static void ShowEvenSymbols()

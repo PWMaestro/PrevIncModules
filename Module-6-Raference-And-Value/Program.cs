@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using System.Threading;
 
-namespace Module_6_Raference_And_Value
+namespace Module6
 {
     enum DaysOfWeek
     {
