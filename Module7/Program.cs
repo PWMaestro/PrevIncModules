@@ -6,6 +6,12 @@ namespace Module7
     {
         static void Main(string[] args)
         {
+            // Task 20. School
+            RunTaskSchool();
+        }
+
+        static void RunTaskSchool()
+        {
             Console.WriteLine("Task 20. School.\n");
             Console.WriteLine("Please, enter a number of students: ");
             int studentsCount = int.Parse(Console.ReadLine());
