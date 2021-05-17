@@ -7,7 +7,31 @@ namespace Module7
         static void Main(string[] args)
         {
             // Task 20. School
-            RunTaskSchool();
+            //RunTaskSchool();
+
+            // Task 21. Belavia
+            RunTaskBelavia();
+        }
+
+        private static void RunTaskBelavia()
+        {
+            Console.WriteLine("Task 21. Belavia.\n");
+            Console.WriteLine("Please, enter a number of flights:");
+            Belavia[] flights = new Belavia[int.Parse(Console.ReadLine())];
+
+            for (int i = 0; i < flights.Length; i++)
+            {
+                Console.WriteLine("Plase, enter a flight destination:");
+                string destination = Console.ReadLine();
+                Console.WriteLine("Plase, enter a number of aircraft:");
+                int number = int.Parse(Console.ReadLine());
+                Console.WriteLine("Plase, enter a type of aircraft:");
+                string type = Console.ReadLine();
+
+                flights[i] = new Belavia(destination, number, type);
+            }
+            Console.WriteLine("Plase, choose a flight type:");
+            Belavia.DisplaySuitableByType(flights, Console.ReadLine());
         }
 
         static void RunTaskSchool()
@@ -39,6 +63,43 @@ namespace Module7
                     Console.WriteLine(student);
                 }
             }
+        }
+    }
+
+    class Belavia
+    {
+        string destination;
+        string aircraftType;
+        int aircraftNumber;
+
+        public Belavia(string destination, int aircraftNumber, string aircraftType)
+        {
+            this.destination = destination;
+            this.aircraftNumber = aircraftNumber;
+            this.aircraftType = aircraftType;
+        }
+
+        public static void DisplaySuitableByType(Belavia[] flightShedule, string aircraftType)
+        {
+            int flightsDisplayed = 0;
+
+            foreach (var flight in flightShedule)
+            {
+                if (flight.aircraftType == aircraftType)
+                {
+                    flightsDisplayed++;
+                    Console.WriteLine(flight);
+                }
+            }
+            if (flightsDisplayed == 0)
+            {
+                Console.WriteLine("No flights detected.");
+            }
+        }
+
+        public override string ToString()
+        {
+            return $"{destination} {aircraftNumber} {aircraftType}";
         }
     }
 
