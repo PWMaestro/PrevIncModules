@@ -15,6 +15,6 @@ namespace Module8
 
         public override void Voice() => Console.WriteLine("bj-w-w");
         public override void Move() => Console.WriteLine("flight");
-        public override void IsHungry() => Console.WriteLine("I want insects");
+        public new void IsHungry() => Console.WriteLine("I want insects");
     }
 }
