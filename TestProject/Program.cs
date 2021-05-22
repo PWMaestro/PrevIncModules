@@ -5,8 +5,37 @@ namespace TestProject
 {
     class Program
     {
+        public interface I
+        {
+            void Go();
+        }
+        public class A : I
+        {
+            public void Go()
+            {
+                Console.WriteLine("А.Go()");
+            }
+        }
+        class B : A
+        { }
+        class C : B, I
+        {
+            public new void Go()
+            {
+                Console.WriteLine("C.Gо()");
+            }
+        }
+
         static void Main(string[] args)
         {
+            B b1 = new B();
+            C c1 = new C();
+            B b2 = c1;
+            b1.Go();
+            c1.Go();
+            b2.Go();
+            ((I)b2).Go();
+
             String s1 = "abc";
             String s2 = "cbd";
             String s3 = "abc";

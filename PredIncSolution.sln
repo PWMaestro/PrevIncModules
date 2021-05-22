@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Module6", "Module-6-Raferen
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Module7", "Module7\Module7.csproj", "{6500171F-A87B-4964-B3B6-9E22E3E5635C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Module8", "Module8\Module8.csproj", "{86CA5DBF-A15B-413F-851C-28C08C2AF5BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Module8", "Module8\Module8.csproj", "{86CA5DBF-A15B-413F-851C-28C08C2AF5BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Module9", "Module9\Module9.csproj", "{5BBCAADF-1380-4E0E-A997-D2C3DD7269AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{86CA5DBF-A15B-413F-851C-28C08C2AF5BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86CA5DBF-A15B-413F-851C-28C08C2AF5BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86CA5DBF-A15B-413F-851C-28C08C2AF5BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BBCAADF-1380-4E0E-A997-D2C3DD7269AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BBCAADF-1380-4E0E-A997-D2C3DD7269AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BBCAADF-1380-4E0E-A997-D2C3DD7269AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BBCAADF-1380-4E0E-A997-D2C3DD7269AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
