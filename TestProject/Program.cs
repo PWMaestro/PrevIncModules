@@ -26,8 +26,20 @@ namespace TestProject
             }
         }
 
+        class Account<T>
+        {
+            public T Id { get; set; }
+            public int Sum { get; set; }
+        }
+
         static void Main(string[] args)
         {
+            Account<int> account1 = new Account<int> { Sum = 5000 };
+            Account<string> account2 = new Account<string> { Sum = 4000 };
+            account1.Id = 2;
+            account2.Id = "4356";
+            Console.WriteLine(account1.Id.GetType() + " " + account2.Id.GetType().ToString());
+
             B b1 = new B();
             C c1 = new C();
             B b2 = c1;
